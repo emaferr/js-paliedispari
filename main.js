@@ -18,7 +18,6 @@
 
 
 // Semplifico tutto con una funzione che posso invocare
-
 /**
  * ### La funzione ritorna l'inverso della stringa
  * @param {string} string Stringa da inserire
@@ -52,6 +51,12 @@ function randomNumber(minimum_number, max_number) {
   }
 
 // Creo la funzione che stabilisce se la somma di due numeri e pari o dispari
+/**
+ * ### La funzione determina se la somma tra due numeri è pari o dispari
+ * @param {Number} number_one Primo numero da inserire
+ * @param {Number} number_two Secondo numero da inserire
+ * @returns {string} Ritorna pari o dispari
+ */
 function evenOdd(number_one, number_two) {
     var rest = ((number_one + number_two) % 2);
 
@@ -75,15 +80,21 @@ var computerNumber = randomNumber(1, 5);
 // Invoco la funzione per generare un esito
 var esito = evenOdd(userNumber, computerNumber);
 
-console.log(userChoice);
-console.log(esito);
-
 // Stampo a schermo se l'utente ha vinto o perso impostando una condizione
 if (userChoice == esito){
     document.write(" Hai vinto")
 }else {
     document.write(" Hai perso")
 }
+
+// Verifiche
+console.log("Parola utente : " + word);
+console.log("Inverso parola utente : " + invertedWord);
+console.log("Numero utente : " + userNumber);
+console.log("Numero computer : " + computerNumber);
+console.log("Somma numeri : " + (userNumber + computerNumber));
+console.log("Scelta utente : " + userChoice);
+console.log("Esito somma numeri : " + esito);
 
 
 
