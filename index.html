@@ -4,6 +4,8 @@
 
   <head>
 
+    <link rel="icon" type="png" href="./assets/img/kisspng-computer-icons-arrow-reverse-hd-icon-5ab0acd7e91e58.1816291615215280239549.png">
+
     <title>JS | Pali e Dispari</title>
 
     <!-- Required meta tags -->
@@ -16,6 +18,77 @@
   </head>
   
   <body>
+
+    <header>
+
+        <nav class="navbar navbar-light bg-light">
+
+            <a class="navbar-brand mx-auto" href="#">
+                <strong class="mx-2 text-secondary"> Pali & Dispari </strong>
+            </a>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <ul class="list-group">
+
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              La parola inserita è
+              <span id="user_word" class="badge badge-primary badge-pill"></span>
+            </li>
+              
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Il suo inverso è  
+              <span id="inverted_word" class="badge badge-primary badge-pill"></span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <strong id="pal_or_not"></strong>
+            </li>
+
+          </ul>
+
+          <ul class="list-group">
+
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Le tue scelte
+              <span id="user_choice" class="badge badge-primary badge-pill"></span>
+              <span id="user_number" class="badge badge-primary badge-pill"></span>
+            </li>
+              
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Il numero generato è  
+              <span id="computer_number" class="badge badge-primary badge-pill"></span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+            La loro somma è
+              <span id="sum_even_odd" class="badge badge-primary badge-pill"></span>
+              <span id="sum_number" class="badge badge-primary badge-pill"></span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <strong id="esito_partita"></strong>
+            </li>
+
+          </ul>
+          
+    </main>
+
+    <footer>
+
+        <nav class="navbar navbar-light bg-light">
+
+            <a class="navbar-brand mx-auto" href="#">
+                <h6 class="mx-2 text-secondary"> #Classe35 </h6>
+            </a>
+
+        </nav>
+
+    </footer>
       
     <!-- My JavaScript -->
     <script src="./assets/js/function.js"></script>
@@ -27,4 +100,5 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
   </body>
-</html>
+
+</html> 

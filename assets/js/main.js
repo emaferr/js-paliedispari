@@ -1,14 +1,14 @@
 // Chiedo all'utente di inserire una parola
-var word = prompt("Inserisci una parola").toLocaleLowerCase()
+var word = prompt("Inserisci una parola").toLocaleUpperCase()
     
 // Invoco la funzione per creare la parola inversa
 var invertedWord = reverseWord(word);
 
 // Stampo a schermo se la parola è o non è palindroma
 if(word == invertedWord){
-document.write('la parola è palindroma');
+document.getElementById("pal_or_not").innerHTML = 'La parola è palindroma';
 } else {
-document.write('la parola non è palindroma');
+document.getElementById("pal_or_not").innerHTML ='La parola non è palindroma';
 }
 
 // L’utente sceglie pari o dispari
@@ -23,21 +23,21 @@ var computerNumber = randomNumber(1, 5);
 // Invoco la funzione per generare un esito
 var esito = evenOdd(userNumber, computerNumber);
 
-// Stampo a schermo se l'utente ha vinto o perso impostando una condizione
+// Imposto una condizione per vedere chi ha vinto e stampo a schermo esito
 if (userChoice == esito){
-    document.write(" Hai vinto")
+    document.getElementById("esito_partita").innerHTML = "Hai vinto!";
 }else {
-    document.write(" Hai perso")
+    document.getElementById("esito_partita").innerHTML = "Hai perso!";
 }
 
 // Verifiche
-console.log("Parola utente : " + word);
-console.log("Inverso parola utente : " + invertedWord);
-console.log("Numero utente : " + userNumber);
-console.log("Numero computer : " + computerNumber);
-console.log("Somma numeri : " + (userNumber + computerNumber));
-console.log("Scelta utente : " + userChoice);
-console.log("Esito somma numeri : " + esito);
+document.getElementById("user_word").innerHTML = word;
+document.getElementById("inverted_word").innerHTML = invertedWord;
+document.getElementById("user_number").innerHTML = userNumber;
+document.getElementById("user_choice").innerHTML = userChoice;
+document.getElementById("computer_number").innerHTML = computerNumber;
+document.getElementById("sum_number").innerHTML = userNumber + computerNumber;
+document.getElementById("sum_even_odd").innerHTML = esito;
 
 
 
